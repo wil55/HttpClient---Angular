@@ -1,0 +1,24 @@
+<div *ngIf="postagem">
+    <h1>Detalhes: {{postagem.id}}</h1>
+
+    <label>Conteúdo:</label>
+    <p>{{postagem.conteudo}}</p>
+    <br>
+
+    <label>Data:</label>
+    <p>{{postagem.data}}</p>
+    <br>
+
+    <label>Data da Edição:</label>
+    <p>{{postagem.dataEdicao}}</p>
+    <br>
+
+    <label>Likes:</label>
+    <p>{{postagem.likes}}</p>
+    <br>
+
+    <label>Dislikes:</label>
+    <p>{{postagem.dislikes}}</p>
+
+    <button (click)="apagar()">Apagar</button>
+</div>
